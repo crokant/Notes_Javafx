@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="backgound_panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="623.0" prefWidth="817.0" style="-fx-background-color: #e2c5ff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.notes_zhavoronkov.Controller">
+   <children>
+      <AnchorPane fx:id="right_panel" layoutX="314.0" layoutY="18.0" prefHeight="586.0" prefWidth="489.0" style="-fx-background-color: #ffffff; -fx-background-radius: 25;">
+         <children>
+            <AnchorPane fx:id="buttoms_panel" layoutX="422.0" layoutY="14.0" prefHeight="558.0" prefWidth="50.0" style="-fx-background-color: #fcee98; -fx-background-radius: 7;">
+               <children>
+                  <Button fx:id="save_button" layoutX="10.0" layoutY="14.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="30.0" style="-fx-background-color: #e2c5ff; -fx-background-radius: 10;" text="&gt;" textAlignment="CENTER">
+                     <font>
+                        <Font name="Calibri" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="dark_mode_button" layoutX="10.0" layoutY="516.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="30.0" style="-fx-background-color: #e2c5ff; -fx-background-radius: 10;" text="🌙" textAlignment="CENTER">
+                     <font>
+                        <Font name="Calibri" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="light_mode_button" layoutX="10.0" layoutY="466.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="30.0" style="-fx-background-color: #e2c5ff; -fx-background-radius: 10;" text="⛅" textAlignment="CENTER">
+                     <font>
+                        <Font name="Calibri" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="newNoteButton" layoutX="10.0" layoutY="64.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="30.0" style="-fx-background-color: #e2c5ff; -fx-background-radius: 10;" text="+" textAlignment="CENTER">
+                     <font>
+                        <Font name="Calibri" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <TextField fx:id="Title_text" layoutX="16.0" layoutY="14.0" prefHeight="56.0" prefWidth="390.0" promptText="Enter the title" style="-fx-background-color: #ffffff; -fx-border-color: #9461fe; -fx-border-radius: 7; -fx-background-radius: 7;">
+               <font>
+                  <Font name="Calibri Italic" size="20.0" />
+               </font>
+            </TextField>
+            <AnchorPane fx:id="panel_mainNote" layoutX="16.0" layoutY="86.0" prefHeight="486.0" prefWidth="390.0" style="-fx-background-color: #e2c5ff; -fx-background-radius: 15;">
+               <children>
+                  <TextArea fx:id="Note_text" layoutX="17.0" layoutY="14.0" opacity="0.75" prefHeight="459.0" prefWidth="357.0" promptText="Text" style="-fx-background-color: #ffffff;">
+                     <font>
+                        <Font name="Calibri Italic" size="20.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="left_panel" layoutX="14.0" layoutY="18.0" prefHeight="586.0" prefWidth="283.0" style="-fx-background-color: #ffffff; -fx-background-radius: 25;">
+         <children>
+            <AnchorPane fx:id="name_panel" layoutX="12.0" layoutY="14.0" prefHeight="56.0" prefWidth="137.0" style="-fx-background-color: #fcee98; -fx-background-radius: 9;">
+               <children>
+                  <Text fx:id="notes_name" fill="#e2c5ffb5" layoutX="35.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notes" wrappingWidth="66.77473449707031">
+                     <font>
+                        <Font name="Calibri Italic" size="25.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <Button fx:id="deleteFiles_button" layoutX="219.0" layoutY="14.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="50.0" style="-fx-background-color: #e2c5ff; -fx-background-radius: 9;" text="×" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri" size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="allFiles_button" layoutX="159.0" layoutY="14.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="50.0" style="-fx-background-color: #e2c5ff; -fx-background-radius: 9;" text="≡" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri" size="21.0" />
+               </font>
+            </Button>
+            <TextField fx:id="note1" layoutX="12.0" layoutY="93.0" prefHeight="35.0" prefWidth="222.0" promptText="Empty" style="-fx-background-color: #ffffff; -fx-background-radius: 7; -fx-border-color: #9461fe; -fx-border-radius: 7;">
+               <font>
+                  <Font name="Calibri Italic" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="note2" layoutX="12.0" layoutY="151.0" prefHeight="35.0" prefWidth="222.0" promptText="Empty" style="-fx-background-color: #ffffff; -fx-background-radius: 7; -fx-border-color: #9461fe; -fx-border-radius: 7;">
+               <font>
+                  <Font name="Calibri Italic" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="note3" layoutX="12.0" layoutY="208.0" prefHeight="35.0" prefWidth="222.0" promptText="Empty" style="-fx-background-color: #ffffff; -fx-background-radius: 7; -fx-border-color: #9461fe; -fx-border-radius: 7;">
+               <font>
+                  <Font name="Calibri Italic" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="note4" layoutX="12.0" layoutY="266.0" prefHeight="35.0" prefWidth="222.0" promptText="Empty" style="-fx-background-color: #ffffff; -fx-background-radius: 7; -fx-border-color: #9461fe; -fx-border-radius: 7;">
+               <font>
+                  <Font name="Calibri Italic" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="note5" layoutX="12.0" layoutY="324.0" prefHeight="35.0" prefWidth="222.0" promptText="Empty" style="-fx-background-color: #ffffff; -fx-background-radius: 7; -fx-border-color: #9461fe; -fx-border-radius: 7;">
+               <font>
+                  <Font name="Calibri Italic" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="note6" layoutX="12.0" layoutY="381.0" prefHeight="35.0" prefWidth="222.0" promptText="Empty" style="-fx-background-color: #ffffff; -fx-background-radius: 7; -fx-border-color: #9461fe; -fx-border-radius: 7;">
+               <font>
+                  <Font name="Calibri Italic" size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="open_note1" layoutX="240.0" layoutY="93.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="30.0" style="-fx-background-color: #e2c5ff; -fx-background-radius: 7;" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="open_note2" layoutX="240.0" layoutY="151.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="30.0" style="-fx-background-color: #e2c5ff; -fx-background-radius: 7;" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="open_note3" layoutX="240.0" layoutY="208.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="30.0" style="-fx-background-color: #e2c5ff; -fx-background-radius: 7;" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="open_note4" layoutX="240.0" layoutY="266.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="30.0" style="-fx-background-color: #e2c5ff; -fx-background-radius: 7;" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="open_note5" layoutX="240.0" layoutY="324.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="30.0" style="-fx-background-color: #e2c5ff; -fx-background-radius: 7;" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="open_note6" layoutX="240.0" layoutY="381.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="30.0" style="-fx-background-color: #e2c5ff; -fx-background-radius: 7;" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="note7" layoutX="12.0" layoutY="438.0" prefHeight="35.0" prefWidth="222.0" promptText="Empty" style="-fx-background-color: #ffffff; -fx-background-radius: 7; -fx-border-color: #9461fe; -fx-border-radius: 7;">
+               <font>
+                  <Font name="Calibri Italic" size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="open_note7" layoutX="240.0" layoutY="438.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="30.0" style="-fx-background-color: #e2c5ff; -fx-background-radius: 7;" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="lower_panel" layoutX="34.0" layoutY="609.0" prefHeight="10.0" prefWidth="745.0" style="-fx-background-color: #fcee98; -fx-background-radius: 9;">
+         <children>
+            <Text fill="#9a9696" layoutX="680.0" layoutY="7.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сделал Arbuzz" wrappingWidth="66.77473449707031">
+               <font>
+                  <Font name="Calibri Italic" size="8.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
